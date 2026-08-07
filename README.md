@@ -20,8 +20,9 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> &bull;
-  <a href="#compatibility">Compatibility</a> &bull;
+  <a href="#what-it-does">What it does</a> &bull;
+  <a href="#how-to-use">How to use</a> &bull;
+  <a href="#commands-and-permissions">Commands</a> &bull;
   <a href="#install">Install</a> &bull;
   <a href="https://github.com/TheNINJALLO/endstone-lotto/releases">Releases</a>
 </p>
@@ -30,9 +31,25 @@
 
 A lottery system plugin for Endstone with configurable prizes and scheduled drawings. This release is aligned with Endstone 0.11.8 and Minecraft Bedrock Dedicated Server 1.26.40, and is distributed as a Python wheel for direct installation in an Endstone server.
 
-## Capabilities
+## What it does
 
--
+- Runs multiple scheduled lotteries with configurable entry prices, prize values, and draw intervals.
+- Charges and pays players through the `Money` scoreboard and queues rewards for offline winners.
+- Uses a configured interaction block for player ticket purchases and an operator form for administration.
+
+## How to use
+
+1. Verify the `Money` scoreboard objective, run `/lotto`, and create at least one lottery type.
+2. Set the player interaction block in the generated configuration and place that block where players can reach it.
+3. Players right-click the configured block to buy entries; scheduled draws and offline payout delivery are automatic.
+4. Run `/lottoreload` after editing `config.json` directly.
+
+## Commands and permissions
+
+| Command / usage | What it does | Access |
+|---|---|---|
+| `/lotto` | Open the lottery admin menu | `lotto.admin` |
+| `/lottoreload` | Reload the lotto configuration | `lotto.admin` |
 
 ## Compatibility
 
