@@ -2,4 +2,4 @@
 from .lotto_plugin import LottoPlugin
 
 __all__ = ["LottoPlugin"]
-__version__ = "1.1.0"
+__version__ = "1.1.2"

@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "endstone-lotto"
-version = "1.1.1"
+version = "1.1.2"
 description = "A lottery system plugin for Endstone with configurable prizes and scheduled drawings"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "endstone>=0.11.8,<0.12",
+    "endstone>=0.11.9,<0.12",
 ]
 
 [project.entry-points."endstone"]
